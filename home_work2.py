@@ -18,7 +18,7 @@ def rt_all(message):
     if message.text == 'игра':
         game_start = True
         number = random.randint(1,10)
-        bot.reply_to(message, f' Угадай число от 1 до 1000')
+        bot.reply_to(message, f' Угадай число от 1 до 10')
     l = int(message.text)
     if l > number:
         bot.reply_to(message, f' Загаданное число меньше')
